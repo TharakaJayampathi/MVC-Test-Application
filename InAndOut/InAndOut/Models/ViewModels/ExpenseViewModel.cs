@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InAndOut.Models.ViewModels
 {
-    public class ExpenseVM
+    public class ExpenseViewModel
     {
         public Expense Expense { get; set; }
         public IEnumerable<SelectListItem> TypeDropDown { get; set; }

@@ -7255,11 +7255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tharaka Jayampathi\\Desktop\\New folder (13)\\InAndOut\\InAndOut\\InAndOut.csproj",
+      "projectUniqueName": "C:\\Users\\Tharaka Jayampathi\\Documents\\Knowledge Management\\Task 2\\MVC-Test-Application\\InAndOut\\InAndOut\\InAndOut.csproj",
       "projectName": "InAndOut",
-      "projectPath": "C:\\Users\\Tharaka Jayampathi\\Desktop\\New folder (13)\\InAndOut\\InAndOut\\InAndOut.csproj",
+      "projectPath": "C:\\Users\\Tharaka Jayampathi\\Documents\\Knowledge Management\\Task 2\\MVC-Test-Application\\InAndOut\\InAndOut\\InAndOut.csproj",
       "packagesPath": "C:\\Users\\Tharaka Jayampathi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tharaka Jayampathi\\Desktop\\New folder (13)\\InAndOut\\InAndOut\\obj\\",
+      "outputPath": "C:\\Users\\Tharaka Jayampathi\\Documents\\Knowledge Management\\Task 2\\MVC-Test-Application\\InAndOut\\InAndOut\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

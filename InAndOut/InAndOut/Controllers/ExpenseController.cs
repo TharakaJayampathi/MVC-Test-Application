@@ -36,15 +36,8 @@ namespace InAndOut.Controllers
         // GET-Create
         public IActionResult Create()
         {
-            //IEnumerable<SelectListItem> TypeDropDown = _db.ExpenseTypes.Select(i => new SelectListItem
-            //{
-            //    Text = i.Name,
-            //    Value = i.Id.ToString()
-            //});
-
-            //ViewBag.TypeDropDown = TypeDropDown;
-
-            ExpenseVM expenseVM = new ExpenseVM()
+            
+            ExpenseViewModel expenseViewModel = new ExpenseViewModel()
             {
                 Expense = new Expense(),
                 TypeDropDown = _db.ExpenseTypes.Select(i => new SelectListItem
@@ -54,13 +47,13 @@ namespace InAndOut.Controllers
                 })
             };
 
-            return View(expenseVM);
+            return View(expenseViewModel);
         }
 
         // POST-Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(ExpenseVM obj)
+        public IActionResult Create(ExpenseViewModel obj)
         {
             if (ModelState.IsValid)
             {
@@ -111,7 +104,7 @@ namespace InAndOut.Controllers
         // GET Update
         public IActionResult Update(int? id)
         {
-            ExpenseVM expenseVM = new ExpenseVM()
+            ExpenseViewModel expenseViewModel = new ExpenseViewModel()
             {
                 Expense = new Expense(),
                 TypeDropDown = _db.ExpenseTypes.Select(i => new SelectListItem
@@ -125,19 +118,19 @@ namespace InAndOut.Controllers
             {
                 return NotFound();
             }
-            expenseVM.Expense = _db.Expenses.Find(id);
-            if (expenseVM.Expense == null)
+            expenseViewModel.Expense = _db.Expenses.Find(id);
+            if (expenseViewModel.Expense == null)
             {
                 return NotFound();
             }
-            return View(expenseVM);
+            return View(expenseViewModel);
 
         }
 
         // POST UPDATE
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Update(ExpenseVM obj)
+        public IActionResult Update(ExpenseViewModel obj)
         {
             if (ModelState.IsValid)
             {
